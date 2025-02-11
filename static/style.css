@@ -1,0 +1,57 @@
+.jumbotron {
+  text-align: center;
+}
+body {
+  background-image: url(pic3.jpg);
+  background-size: cover;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  text-align: center;
+}
+nav ul li {
+  font-size: 20px;
+}
+.content h1 {
+  font-size: 100px;
+  color: snow;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.content h1:hover {
+  -webkit-text-stroke: 2px snow;
+  color: transparent;
+}
+.content a {
+  text-align: center;
+  font-size: 30px;
+  border-radius: 50px;
+}
+.backvideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .backvideo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .backvideo {
+    width: auto;
+    height: 100%;
+  }
+}
